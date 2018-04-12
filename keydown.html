@@ -6,23 +6,17 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
 	<script type="text/javascript">
 		$(function(){
-			$("#t1").keydown(function(){
-			var value = $("#t1").val(); 
-      		$("#t2").text(value);
+			$("#t3").keydown(function(){
+				var val1=parseInt($("#t1").val());
+                var val2=parseInt($("#t2").val());
+                $("#t3").val(val1 + val2);
 			})
 		});
 	</script>
 </head>
 <body>
-    <p>
-        Enter number a: <input type="number" id="number1"> 
-    </p>
-    <p>
-        Enter number b: <input type="number" id="number2"> 
-    </p>
-
-    <p>
-        Sum: <label id="label_sum">23 </label>
-    </p>
+1stno<input type="text" id="t1"><br><br>
+2ndn<input type="text" id="t2"><br><br>
+sum<input type="text" id="t3"><br><br>
 </body>
 </html>
